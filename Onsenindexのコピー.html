@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script src="Onsenjs/onsenindex.js"></script>
+  <meta charset="utf-8">
+  <style>
+      #MapImage{
+          width: 100vw;
+          height: 100vh;
+      }
+  </style>
+</head>
+<body>
+    <!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. -->
+
+    <ons-splitter>
+            <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+              <ons-page>
+                <!--検索バー-->
+                <p style="text-align: center; margin-top: 10px;">
+                  <ons-search-input
+                    placeholder="Search"
+                    onchange="ons.notification.alert('Searched for: ' + this.value)"
+                  ></ons-search-input>
+                </p>
+                <!--検索バー-->
+              </ons-page>
+            </ons-splitter-side>
+            <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+    </ons-splitter>
+
+    <template id="home.html">
+        <ons-page>
+            <div class="toolbar">
+                <div class="toolbar__left">
+                    <ons-toolbar-button onclick="fn.open()">
+                        <ons-icon icon="md-menu"></ons-icon>
+                    </ons-toolbar-button>
+                    <!--元々は, こっちのコードだったけど, 他のtemplateのleftbuttonのコードを使うと統一された.
+                    <span class="toolbar-button toolbar-button--outline">
+                        <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>
+                    </span>
+                    -->
+                </div>
+                <div class="toolbar__center">
+                    キャンパスマップ
+                </div>
+                <div class="toolbar__right">
+                    <span class="toolbar-button toolbar-button--outline">AIサーチ</span>
+                </div>
+            </div>
+                <!--<img src="images/map061331243.jpg" id="MapImage">-->
+                <!--Toast通知をするボタン-->
+                <ons-button onclick="showToast()">Toast1</ons-button>
+                <ons-button onclick="showToast()">Toast2</ons-button>
+                <ons-button onclick="showToast()">Toast3</ons-button>
+                <ons-button onclick="showToast()">Toast4</ons-button>
+                <ons-button onclick="showToast()">Toast5</ons-button>
+                <p>
+                        <label for="name1">名前</label>
+                    
+                        <input type="text" name="namae" id="name1">
+                </p>
+                    
+                  
+        </ons-page>
+    </template>
+
+</body>
+</html>
