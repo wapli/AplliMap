@@ -1,2 +1,3 @@
 # AppliMap
-For the team of CampusMap
+キャンパスマップ班のRepositoryです。
+
