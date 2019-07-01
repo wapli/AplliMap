@@ -6,10 +6,17 @@
   <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
   <script src="Onsenjs/onsenindex.js"></script>
   <meta charset="utf-8">
+  <!--画面のピンチを可能にするための付け足したコード, これだけでは特にピンチできず-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!--画面のピンチを可能にするための付け足したコード, これだけでは特にピンチできず-->
   <style>
       #MapImage{
-          width: 100vw;
-          height: 100vh;
+          width: 300vw;
+          height: 300vh;
+      }
+
+      #body{
+          -webkit-text-size-adjust: 100%;
       }
   </style>
 </head>
@@ -52,20 +59,16 @@
                     <span class="toolbar-button toolbar-button--outline">AIサーチ</span>
                 </div>
             </div>
-                <!--<img src="images/map061331243.jpg" id="MapImage">-->
-                <!--Toast通知をするボタン-->
+                <!--Toast通知をするボタン
                 <ons-button onclick="showToast()">Toast1</ons-button>
                 <ons-button onclick="showToast()">Toast2</ons-button>
                 <ons-button onclick="showToast()">Toast3</ons-button>
                 <ons-button onclick="showToast()">Toast4</ons-button>
                 <ons-button onclick="showToast()">Toast5</ons-button>
-                <p>
-                        <label for="name1">名前</label>
-                    
-                        <input type="text" name="namae" id="name1">
+                Toast通知をするボタン-->
+                <p class="sample" style="overflow: scroll;">
+                <img src="img/map061331243.jpg" id="MapImage">
                 </p>
-                    
-                  
         </ons-page>
     </template>
 
