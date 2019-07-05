@@ -1,0 +1,96 @@
+img.button:hover{
+    opacity:0.5;
+    cursor: pointer;
+    }
+.but{
+    height:100px;  
+    border-radius: 10px;
+    }
+.kentaro{
+    position:relative;
+    }
+.anon{
+    position:absolute;
+    top:600px;
+    left:383px;
+    }
+.anon2{
+    position:absolute;
+    top:500px;
+    left:252px;
+    }
+#eto{
+    height:200px;
+    }
+.anon3{
+    position:absolute;
+    top:200px;
+    left:302px;
+    }
+.anon4{
+    position:absolute;
+    top:100px;
+    left:302px;
+    }
+.anon5{
+    position:absolute;
+    top:600px;
+    left:102px;
+    }
+.anon6{
+    position:absolute;
+    top:20px;
+    left:202px;
+    }
+.kiyoto{
+    position:absolute;
+    display:none;
+    top:0px;
+    left:0px;
+    
+}
+
+/*左側の吹き出し*/
+
+  .hukidasi {
+    background-color: bisque;
+    padding: 20px;
+    position: absolute;
+    height: 3px;
+    width:80px;
+    top:400px;
+    left:502px;
+  }
+  .hukidasi:after {
+    border-right: 12px solid bisque;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    content: '';
+    margin-top: -10px;
+    /* これで真ん中あたりに三角が来る */
+    position: absolute;
+    left: -12px;
+    top: 50%;
+
+    
+  }
+/* 右側の吹き出し */
+  .hukidasi2 {
+    background-color:red;
+    padding: 20px;
+    position: relative;
+    width:100px;
+
+  }
+  .hukidasi2:after {
+    border-left: 12px solid red;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    /* borderなんちゃらで吹き出しを向けたい方向以外の3方向を設定 */
+    content: '';
+    margin-top: -10px;
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    /* ５０％で真ん中ぐらいに置く */
+  }
