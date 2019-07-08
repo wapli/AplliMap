@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script src="onsenindex.js"></script>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="onsenindex.css">
+</head>
+<body>
+    <!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. -->
+
+    <ons-splitter >
+            <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+              <ons-page>
+                <!--検索バー-->
+                <p style="text-align: center; margin-top: 10px;">
+                  <ons-search-input
+                    placeholder="Search"
+                    onchange="ons.notification.alert('Searched for: ' + this.value)"
+                  ></ons-search-input>
+                </p>
+                <!--検索バー-->
+              </ons-page>
+            </ons-splitter-side>
+            <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+    </ons-splitter>
+
+    <template id="home.html">
+        <ons-page>
+            
+            <div class="toolbar">
+                <div class="toolbar__left">
+                    <ons-toolbar-button onclick="fn.open()">
+                        <ons-icon icon="md-menu"></ons-icon>
+                    </ons-toolbar-button>
+                    <!--元々は, こっちのコードだったけど, 他のtemplateのleftbuttonのコードを使うと統一された.
+                    <span class="toolbar-button toolbar-button--outline">
+                        <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>
+                    </span>
+                    -->
+                </div>
+                <div class="toolbar__center">
+                    キャンパスマップ
+                </div>
+                <div class="toolbar__right">
+                    <span class="toolbar-button toolbar-button--outline">AIサーチ</span>
+                </div>
+            </div>
+                <!--<img src="images/map061331243.jpg" id="MapImage">-->
+                <!--Toast通知をするボタン-->
+                <div class="main">
+                    <img src="map.jpg">
+                    <div class="buton">
+                        <button id="ibui1" onclick="myToast.toggle();box_cha('ibuibox');toast_name('イーブイ')"><img src="face.png " width=50px height=50px></button>
+                        <button id="tiko"onclick="myToast.toggle();box_cha('tikobox');toast_name('チコリータ')"><img src="tiko.png" width=50px height=50px></button>
+                        <ons-button onclick="showToast()">Toast3</ons-button>
+                        <ons-button onclick="showToast()">Toast4</ons-button>
+                        <ons-button onclick="showToast()">Toast5</ons-button>
+                   
+                    </div>
+                </div>
+              
+              </template>
+
+
+   <div class ="box no" id="ibuibox">
+       
+        <h3>イーブイ
+            <button class="cancel" >✖</button>
+
+        </h3>
+           <div class="inner">
+                アンバランス　かつ　ふあんていないでんしを　もっており　さまざまなしんかの　かのうせいを　ひめている。
+                <li>
+                        分類しんかポケモン
+                </li>
+                <li>
+                        特性にげあしてきおうりょく
+                </li>
+                <li>
+                        高さ0.3 m
+                </li>
+                <li>
+                        重さ6.5 kg
+                </li>
+            </div>
+        
+    </div>
+
+    <div class ="box" id="tikobox">
+           
+             <h3>チコリータ
+                 <button class="cancel" >✖</button>
+     
+             </h3>
+                <div class="inner">
+                        あたまのはっぱから　ほのかに　あまいかおりが　ただよう。　おとなしくてひざしを　あびるのが　だいすき。 
+                    <li>
+                             分類はっぱポケモン
+                     </li>
+                     <li>
+                             特性しんりょく 
+                     </li>
+                     <li>
+                             高さ0.9 m
+                     </li>
+                     <li>
+                             重さ6.4 kg
+                     </li>
+                 </div>
+            
+        
+        </div>
+     
+    
+
+    <!--トーストに表示させる部分-->
+    <main>
+    <ons-toast id="myToast" animation="ascend">
+       <div id="pokename">
+    
+        </div>
+
+        <button id="toastbutton" onclick="myToast.hide()">詳しく</button>
+      </ons-toast>
+
+     
+</main>
+</body>
+</html>
