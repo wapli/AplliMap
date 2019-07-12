@@ -1,0 +1,101 @@
+#MapImage{
+    width: 100vw;
+    height: 100vh;
+}
+
+.main{
+    position:relative;
+}
+
+.buton{
+    position:absolute;
+    top:0px;
+   
+}
+
+#ibui1{
+    position:absolute;
+    max-width: 20px;
+    height: auto;
+    top:500px;
+    left:400px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+
+
+ #ibuibox{
+      display:none;
+  }
+
+ 
+
+  #tiko{
+    position:absolute;
+    max-width: 20px;
+    height: auto;
+    top:300px;
+    left:300px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+  }
+
+ #tikobox{
+      display:none;
+  }
+
+#toastbutton{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.inner{
+    color:white;
+}
+
+.cancel{
+    position:absolute;
+    right:0px;
+    border-radius: 20px;
+}
+.box{
+    display:none;
+    position :absolute;
+    
+    margin: auto;
+    top:60px;
+    left:30px;
+    border: 2px solid #0094D6;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 500px;
+  }
+ 
+
+
+
+  h3{
+    background: #0094D6;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+  }
+
+  
+  .inner{
+    padding: .5em;
+  }
+
+  .cancel{
+      cursor:pointer;
+      cursor:hand;
+  }

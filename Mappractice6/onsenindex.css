@@ -1,0 +1,204 @@
+#MapImage{
+    width: 100vw;
+    height: 100vh;
+}
+
+.main{
+    position:relative;
+}
+
+.buton{
+    position:absolute;
+    top:0px;
+   
+}
+
+#ibui1{
+    position:absolute;
+    max-width: 20px;
+    height: auto;
+    top:500px;
+    left:400px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+
+
+
+ #ibuibox{
+      display:none;
+  }
+
+ 
+
+  #tiko{
+    position:absolute;
+    max-width: 20px;
+    height: auto;
+    top:300px;
+    left:300px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+  }
+
+ #tikobox{
+      display:none;
+  }
+
+#toastbutton{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.inner{
+    color:white;
+}
+
+.cancel{
+    position:absolute;
+    right:0px;
+    border-radius: 20px;
+}
+.box{
+    display:none;
+    position :absolute;
+    
+    margin: auto;
+    top:60px;
+    left:30px;
+    border: 2px solid #0094D6;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 500px;
+  }
+ 
+
+
+
+  h3{
+    background: #0094D6;
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+  }
+
+  
+  .inner{
+    padding: .5em;
+  }
+
+  .cancel{
+      cursor:pointer;
+      cursor:hand;
+  }
+  .btn-flat-border {
+    position:relative;
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: .4s;
+    width: 100%;
+    position:center;
+    text-align: center;
+    height:70px;
+  }
+  .pic{
+    position:absolute;
+    top:10%;
+    left:2px;
+  }
+  .btn-flat-border:hover {
+    background: #67c5ff;
+    color: white;  
+  }
+  .btn-social-icon-facebook {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: #4966a0;;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  
+  .btn-social-icon-facebook:hover {
+    color:#668ad8;
+    transition: .5s;
+  }
+  
+  .btn-social-icon-facebook__square {
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    line-height: 50px;
+    color: #FFF;
+    background: #4966a0;;
+  }
+  
+  .btn-social-icon-facebook__square .fa-facebook {
+    position: absolute;
+    bottom: -3px;
+    right: 6px;
+    font-size: 42px;
+  }
+
+/*Wi-Fi*/
+/**/
+.btn-social-isometric { 
+  color: #484848;
+  display: inline-block;
+  height: 50px;
+  font-size: 25px;
+  line-height: 46px;
+  background: #eaeef1;
+  text-decoration: none;
+  box-sizing: border-box; 
+  margin: 1em;
+}
+.btn-social-isometric-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+.btn-social-isometric-icon i {
+  line-height: 46px;
+  font-size: 25px;
+}
+.btn-social-isometric-text {
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  border-bottom: solid 4px #dcdcdc;
+}
+.btn-social-isometric-icon--pocket {
+  background:#fd7171;
+  border-bottom: solid 4px #ef4d4d;
+}
+.btn-social-isometric:hover {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+.btn-social-isometric:hover .btn-social-isometric-text, .btn-social-isometric:hover .btn-social-isometric-icon {
+  border-bottom: none;
+}
+
+.page__content{
+   position :relative;
+}
