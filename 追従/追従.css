@@ -1,0 +1,26 @@
+.box1{
+    position:relative;
+    width:958.66px;
+    margin:0%;
+}
+
+.title{
+    position:fixed;
+    top:0px;
+    padding:0.5em;
+    color:skyblue;
+    border-bottom: solid 3px black;
+    background-color: aliceblue;
+    margin:0px;
+    width:100%;
+
+}
+
+#tower{
+    height:200%;
+    width:100%;
+}
+
+body{
+    margin: 0%
+}
