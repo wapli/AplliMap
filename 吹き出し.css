@@ -1,0 +1,57 @@
+.hukidasi {
+    display:none;
+    position :absolute;
+    margin: auto;
+    top:600px;
+    left:100px;
+  /* border: 2px solid #0094D6; */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 50px;
+    width:200px;
+ /*animation:１名前 ２時間　３変化率(ease、linear、ease-out、ease-in-out）
+ ４④ animation-delay
+アニメーションの開始をいくら遅らせるかを指定。
+5 animation-iteration-count
+アニメーションを何回繰り返すかを指定。
+6 animation-direction
+繰り返し時、往復処理をするかを指定。*/
+    animation: fadeIn 0.1s ease 0s 1 normal;
+    -webkit-animation: fadeIn 0.1s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+   
+  }
+
+  .hukidasi:after {
+
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    margin: 0 auto;
+     /*reight　右
+       left 左
+　     top　上
+　     bottom　下
+       つけたい三角の位置を消す*/
+    border-top: 15px solid rgba(0, 0, 0, 0.616);
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+  }
+  
+.but{
+    height:100px;  
+    border-radius: 10px;
+    }/*建物ボタン*/
