@@ -1,0 +1,21 @@
+.site-box{
+  width:3000px;
+  height:3000px;
+    position:relative;
+}
+.aa img{
+    animation: Flash4 1s infinite;
+  }
+  
+  /* アニメーション */
+  @keyframes Flash4{
+    50%{
+      box-shadow: 0 1px 15px 1px blue;
+    }
+  }
+  
+  .kuku{
+      position:absolute;
+      left:1000px;
+      top:1000px;
+  }
