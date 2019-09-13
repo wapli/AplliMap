@@ -2,10 +2,20 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8"></meta>
-    <title>時刻処理</title>
+    <title>イベントステージ機能</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <!--フェードイン・フェードアウトする吹き出し-->
+    <div id="eventWindow" style="background-color:white; border-style:double; border-radius: 30px; border-width: 10px; border-color:palegreen; height:80vh; width:80vw; display: none">
+        イベント当日までお待ちください。<br><img src="eventImg/申し訳ございません.jpg">
+    </div>
+    <!--フェードイン・フェードアウトさせるボタン-->
+    <button id="button" style="background-color: khaki; height: 200px; width: 300px;">
+        Click me!
+    </button>
+    
     <script src="eventTime.js"　name="eventImg"></script>
 </body>
 
