@@ -19,6 +19,7 @@ switch(now_hour){
         evewin.innerHTML='<img src="eventImg/mainartist2019-300x253.png"><br>They are フレンズ.';
         break;
 }
+
 //時間帯別表示js
 
 //吹き出しjs
