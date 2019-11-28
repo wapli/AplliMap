@@ -1,3 +1,3 @@
 # AppliMap
-キャンパスマップ班のRepositoryです。
+アプリ班マップ機能のRepositoryです。
 
