@@ -1,0 +1,893 @@
+.cp_actab {
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	margin: 0 auto;
+	color: #ffffff;
+}
+.cp_actab input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_actab label {
+	font-weight: bold;
+	line-height: 3;
+	position: relative;
+	display: block;
+	padding: 0 0 0 4em;
+	cursor: pointer;
+	margin: 0 0 2px 0;
+	background: #50b0e7;
+}
+.cp_actab .cp_actab-content {
+	overflow: auto;
+	max-height: 0;
+	-webkit-transition: max-height 0.35s;
+	transition: max-height 0.35s;
+	color: #333333;
+	background: #c6e5f1;
+}
+.cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* :checked */
+.cp_actab input:checked ~ .cp_actab-content {
+	max-height: 20em;
+}
+/* Icon */
+.cp_actab label::after {
+	line-height: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	text-align: center;
+}
+.cp_actab input[type=checkbox] + label::after {
+	content: '▲';
+}
+.cp_actab input[type=checkbox]:checked + label::after {
+	transform: rotate(180deg);
+}
+.cp_actab-content>button{
+  height:60px;
+  width:100%;
+ text-align:left;
+ font-size:100%;
+ border:solid 0.5px;
+ border-color: #67c5ff;
+}
+.cp_actab-content>button:hover{
+  background-color:mediumturquoise;
+}
+.list_title{
+  position:relative;
+  height:50px;
+  
+  margin: 0px auto;
+  background-color: rgba(12, 19, 19, 0.4);  
+}
+#list_title{
+  position:absolute;
+  top:14px;
+  left:80px;
+  color: #edf1f3;
+}
+.aa{
+  transition: all 300ms 0s ease;
+}
+.expandable-content{
+  padding:0px;
+}
+.list_cate_des{
+  display: inline-block;
+  padding: 0.3em 0em;
+  text-decoration: none;
+  left:0px;
+  width:99%;
+  height:90px;
+  color: #67c5ff; 
+  /*文字の色*/
+  border: solid 1px #67c5ff;
+  /*　枠*/
+  border-radius: 3px;
+  /*角の丸み*/
+  transition: .4s;
+  /*アニメーションのスピードらしいけどよくわからん*/
+}
+.list_des {
+    display: inline-block;
+    padding: 0.3em 0em;
+    text-decoration: none;
+    left:0px;
+    width:99%;
+    height:65px;
+    color: #67c5ff; 
+    /*文字の色*/
+    border: solid 1px #67c5ff;
+    /*　枠*/
+    border-radius: 3px;
+    /*角の丸み*/
+    transition: .4s;
+    /*アニメーションのスピードらしいけどよくわからん*/
+    }
+  
+.li_open.list_des:hover,.list_cate_des:hover
+{
+  background: #67c5ff;
+  color: white;
+}
+
+.map{
+  position: relative;
+}
+
+#map{
+  width:300vw;
+  height:200vh;
+}
+
+/*建物*/
+.obj{ 
+position:absolute;
+}
+
+/*建物*/
+
+/*建物吹き出し*/
+.obj_inf{
+    position: absolute;
+    top:22%;
+    left:50%;
+    height:100%;
+    width:100%;
+    height:auto;
+    border-radius: 10px;/*丸み*/
+    display:inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #FFF;
+    border: solid 3px #555;
+    box-sizing: border-box;
+}
+/*建物吹き出し*/
+
+
+/*模擬店吹き出し*/
+.shop_inf{
+  position: absolute;
+    top:22%;
+    left:50%;
+    height:30%;
+    width:95%;
+    overflow: scroll;
+    border-radius: 10px;/*丸み*/
+    display:inline-block;
+    margin: 1.5em 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #FFF;
+    border: solid 3px #555;
+    box-sizing: border-box;
+}
+/*模擬店吹き出し*/
+
+/*表記の設定*/
+.sentence{
+  margin-left: 105px;
+  text-align:left;
+  font-family:"ヒラギノ丸ゴ Pro";
+}
+/*表記の設定*/
+
+/*建物ボタンのサイズ*/
+.b_size{
+  max-width: 100px;
+  height:auto;
+}
+
+
+.closeWindow{
+  position: absolute;
+  color:black;
+  height:30px;
+  width:70px;
+  top:21%;
+  left:50%;
+}
+
+/*模擬店ボタンのサイズ*/
+.shopb_size{
+  max-width: 40px;
+  height:auto;
+}
+
+#shop1to12{
+  width: 30px;
+  height:240px;
+  background-color:transparent;
+  left:5.2in;
+  top:9.5in;
+}
+#shop_inf1to12{
+  display: none;
+}
+#close1to12{
+  display: none;
+}
+
+#shop13to25{
+  width: 30px;
+  height:130px;
+  background-color:transparent;
+  left:5.2in;
+  top:7.2in;
+}
+#shop_inf13to25{
+  display:none;
+}
+#close13to25{
+  display: none;
+}
+
+#shop26to41{
+  width: 110px;
+  height:35px;
+  background-color:transparent;
+  left:3.1in;
+  top:7.6in;
+}
+#shop_inf26to41{
+  display:none;
+}
+#close26to41{
+  display: none;
+}
+
+#shop42to55{
+  width: 30px;
+  height:135px;
+  background-color:transparent;
+  left:2.6in;
+  top:6.6in;
+}
+#shop_inf42to55{
+  display:none;
+}
+#close42to55{
+  display: none;
+}
+
+#shop56to68{
+  width: 30px;
+  height:240px;
+  background-color:transparent;
+  left:3.4in;
+  top:3in;
+}
+#shop_inf56to68{
+  display:none;
+}
+#close56to68{
+  display: none;
+}
+
+#shop69to72{
+  width: 60px;
+  height:25px;
+  background-color:transparent;
+  left:3.6in;
+  top:3.1in;
+}
+#shop_inf69to72{
+  display:none;
+}
+#close69to72{
+  display: none;
+}
+
+#shop_inf80to87{
+  display:none;
+}
+#close80to87{
+  display:none;
+}
+
+
+
+#jaga{
+  display:none;
+}
+#closeJaga{
+  display:none;
+}
+
+#potato{
+  display:none;
+}
+#closePotato{
+  display:none;
+}
+
+#yakisoba{
+  display:none;
+}
+#closeYakisoba{
+  display:none;
+}
+
+#tamasen{
+  display:none;
+}
+#closeTamasen{
+  display:none;
+}
+
+#hashimaki{
+  display:none;
+}
+#closeHashimaki{
+  display:none;
+}
+
+#huranku{
+  display:none;
+}
+#closeHuranku{
+  display:none;
+}
+
+#agemono{
+  display:none;
+}
+#closeAgemono{
+  display:none;
+}
+
+#udon{
+  display:none;
+}
+#closeUdon{
+  display:none;
+}
+
+#kare{
+  display:none;
+}
+#closeKare{
+  display:none;
+}
+
+#ramen{
+  display:none;
+}
+#closeRamen{
+  display:none;
+}
+
+#tonjiru{
+  display:none;
+}
+#closeTonjiru{
+  display:none;
+}
+
+#shoronpo{
+  display:none;
+}
+#closeShoronpo{
+  display:none;
+}
+
+#sekair{
+  display:none;
+}
+#closeSekair{
+  display:none;
+}
+
+#softdrink{
+  display:none;
+}
+#closeSoftdrink{
+  display:none;
+}
+
+#tapioka{
+  display:none;
+}
+#closeTapioka{
+  display:none;
+}
+
+
+#popcorn{
+  display:none;
+}
+#closePopcorn{
+  display:none;
+}
+
+#shuice{
+  display:none;
+}
+#closeShuice{
+  display:none;
+}
+
+#babykasu{
+  display:none;
+}
+#closeBabykasu{
+  display:none;
+}
+
+#french{
+  display:none;
+}
+#closeFrench{
+  display:none;
+}
+
+#chrosu{
+  display:none;
+}
+#closeChrosu{
+  display:none;
+}
+
+#watagashi{
+  display:none;
+}
+#closeWatagashi{
+  display:none;
+}
+
+#sata{
+  display:none;
+}
+#closeSata{
+  display:none;
+}
+
+#daigaku{
+  display:none;
+}
+#closeDaigaku{
+  display:none;
+}
+
+#sekaio{
+  display:none;
+}
+#closeSekaio{
+  display:none;
+}
+
+#yoyo{
+  display:none;
+}
+#closeYoyo{
+  display:none;
+}
+
+#massage{
+  display:none;
+}
+#closeMassage{
+  display:none;
+}
+
+#uranai{
+  display:none;
+}
+#closeUranai{
+  display:none;
+}
+
+#game{
+  display:none;
+}
+#closeGame{
+  display:none;
+}
+
+#zakka{
+  display:none;
+}
+#closeZakka{
+  display:none;
+}
+
+#acce{
+  display:none;
+}
+#closeAcce{
+  display:none;
+}
+
+#nuno{
+  display:none;
+}
+#closeNuno{
+  display:none;
+}
+
+#flower{
+  display:none;
+}
+#closeFlower{
+  display:none;
+}
+
+#davis{
+  display:none;
+}
+#closeDavis{
+  display:none;
+}
+
+#shionMenu{
+  display:none;
+}
+#closeShion{
+  display:none;
+}
+
+#senmon{
+  display:none;
+}
+#closeSenmon{
+  display:none;
+}
+
+#ratte{
+  display:none;
+}
+#closeRatte{
+  display:none;
+}
+
+#nichiryoMenu{
+  display:none;
+}
+#closeNichiryo{
+  display:none;
+}
+
+#koubai{
+  display:none;
+}
+#closeKoubai{
+  display:none;
+}
+
+#johermi{
+  display:none;
+}
+#closeJohermi{
+  display:none;
+}
+
+#famima{
+  display:none;
+}
+#closeFamima{
+  display:none;
+}
+
+#cafe{
+  display:none;
+}
+#closeCafe{
+  display:none;
+}
+
+
+
+
+
+/*各種建物*/
+#romu{  
+  left:135%;
+  top:82%;
+}
+#romu_size{
+  max-width: 150px;
+}
+#jm{
+  left:175%;
+  top:78%;
+}
+#mainStage{
+  width: 100px;
+  height:120px;
+  background-color:transparent;
+  left:3.6in;
+  top:8.7in;
+}
+#memoStage{
+  width: 90px;
+  height:90px;
+  background-color:transparent;
+  left:3.5in;
+  top:3.3in;
+}
+#library{
+  left:100%;
+  top:58%;
+}
+#tc1{
+  left:65%;
+  top:60%;
+}
+#tc2{
+  left:40%;
+  top:60%;
+}
+#mk{
+  left:135%;
+  top:71%;
+}
+#soko{
+  left:135%;
+  top:50%;
+}
+#soko_size{
+  max-width: 80px;
+}
+#kohaku{
+  left:135%;
+  top:60%;
+}
+#christ{
+  left:135%;
+  top:68%;
+}
+#shigyo{
+  left:65%;
+  top:78%;
+}
+#korin{
+  left:87%;
+  top:84%;
+}
+#hoken{
+  left:47%;
+  top:80%;
+}
+#hoken_size{
+  max-width: 50px;
+}
+#bekkan{
+  left:19%;
+  top:70%;
+}
+#kd{
+  left:85%;
+  top:50%;
+}
+/*
+#nichiryo{
+  left:90%;
+  top:37%;
+}
+*/
+#riko{
+  left:132%;
+  top:37%;
+}
+#riko_size{
+  max-width: 200px;
+}
+#yutokue{
+  left:162%;
+  top:22%;
+}
+#yutokue_size{
+  max-width: 40px;
+}
+#yutokuw{
+  left:162%;
+  top:30%;
+}
+#yutokuw_size{
+  max-width: 40px;
+}
+#shishin{
+  left:180%;
+  top:15%;
+}
+#shishin_size{
+  max-width: 60px;
+}
+#tc3{
+  left:65%;
+  top:35%;
+}
+#shion{
+  left:110%;
+  top:30%;
+}
+#keki{
+  left:105%;
+  top:15%;
+}
+#koki{
+  left:80%;
+  top:15%;
+}
+#koki_size{
+  max-width: 80px;
+}
+/*各種建物*/
+
+
+
+.obj_inf:before {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #FFF;
+  z-index: 2;
+}
+  
+.obj_inf:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #555;
+  z-index: 1;
+}
+
+/*建物吹き出し*/
+#obj_inf0{
+  display:none;
+}
+
+#obj_inf1{
+  display:none;
+}
+
+#obj_inf2{
+  display:none;
+}
+
+/*メインステージ*/
+#mainStage_inf{
+  display:none;
+}
+#closeMain{
+  display:none;
+}
+
+/*メモリアルステージ*/
+#memoStage_inf{
+  display:none;
+}
+#closeMemo{
+  display:none;
+}
+
+
+/*ウィンドウ閉じるボタン*/
+
+
+
+/*模擬店写真*/
+.photo{
+  float: left;
+  width:200px;
+  height:200px;
+  border-radius: 10px;/*丸み*/
+  margin-top: 5px;
+  margin-left: 5px;
+}
+/*模擬店写真*/
+
+/*メニューアイコン*/
+.photo2{
+  width:30px;
+  height:30px;
+ }
+/*メニューアイコン*/
+
+/*模擬店タイトル*/
+.title{
+  font-size: 200%;
+  font-weight:bold;
+  line-height: 1.5;
+  text-align:left;
+}
+/*模擬店タイトル*/
+
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  margin:0;
+}
+
+ul{list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+
+  .li-close{
+  width:0px;
+  height:0px;
+  }
+
+
+.Heart{
+  color:pink;
+  animation: anime4 1.5s alternate infinite;
+ 
+}
+@keyframes anime4{
+  0% {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
+}
+
+/*非お気に入り時のハートデザイン*/
+ .heart4 {
+  background:none;
+  border:0;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 96%;
+  top: 11%;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+/*お気に入りハート時のハートデザイン*/
+.heart3 {
+  background:none;
+  border:0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 96%;
+    top: 11%;
+    transform: translate(-50%, -50%);
+    background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    animation:fave-heart 1s steps(28);
+    animation-fill-mode:both;
+  }
+  @keyframes fave-heart {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -2800px 0;
+    }
+
+  }
