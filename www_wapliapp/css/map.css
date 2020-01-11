@@ -3,8 +3,8 @@
   position: relative;
 }
 #mapImage{
-  width:275vw;
-  height:275vh;
+  width:100vw;
+  height:100vh;
 }
 /*マップ画像の設定*/
 
@@ -36,7 +36,7 @@
 }
 /* obj0：図書館 */
 #obj0{
-  top:71%; /* %：親要素を基準とした長さの単位 */
+  top:73%; /* %：親要素を基準とした長さの単位 */
   left:32%;
   width:100px;
   height:50px;
@@ -45,27 +45,27 @@
 #obj1{
   top:81%;
   left:48%;
-  width:148px;
+  width:144px;
   height:50px;
 }
 /* obj2：嗣業館*/
 #obj2{
-  top:76%;
+  top:78%;
   left:25%;
   width:50px;
   height:95px;
 }
-/* obj3：理工学館 */
+/* obj3：理化学館 */
 #obj3{
-  top:63%;
-  left:46%;
-  width:110px;
+  top:61%;
+  left:47%;
+  width:115px;
   height:60px;
 }
 /* obj4：JM */
 #obj4{
-  top:78%;
-  left:63%;
+  top:79%;
+  left:62%;
   width:55px;
   height:95px;
 }
@@ -78,10 +78,10 @@
 }
 /* 日糧館 */
 #obj6{
-  top:61%;
+  top:62%;
   left:30%;
   width:50px;
-  height:110px;
+  height:135px;
 }
 /* 日糧館は情報量多いので、吹き出し枠の高さを制限 */
 #obj_inf6{
@@ -96,8 +96,8 @@
 }
 /* 紫苑館 */
 #obj8{
-  top:54%;
-  left:32%;
+  top:55%;
+  left:31%;
   width:100px;
   height:100px;
 }
@@ -125,11 +125,11 @@
 }
 #libraryPin{
   top:71%; /* %：親要素を基準とした長さの単位 */
-  left:32%;
+  left:33%;
 }
 #rohmPin{
-  top:81%;
-  left:48%;
+  top:79%;
+  left:51%;
 }
 #shigyoPin{
   top:78%;
@@ -140,8 +140,8 @@
   left:49%;
 }
 #jmPin{
-  top:78%;
-  left:63%;
+  top:77%;
+  left:62%;
 }
 #mkPin{
   top:75%;

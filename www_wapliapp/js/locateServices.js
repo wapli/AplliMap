@@ -1,4 +1,5 @@
 document.addEventListener("init", function(event){
+   
     var page = event.target;
     if(page.id == "ons-map"){
         var pins = document.getElementsByClassName("pin");
@@ -6,7 +7,7 @@ document.addEventListener("init", function(event){
         var rohm = pins[1];
         var shigyo = pins[2];
         var rika = pins[3];
-        var lm = pins[4];
+        var jm = pins[4];
         var mk = pins[5];
         var nichiryo = pins[6];
         var hoken = pins[7];
@@ -18,56 +19,59 @@ document.addEventListener("init", function(event){
 
         for(var i=0;i<pins.length;i++){
             document.addEventListener("click", function(){
-                switch(i){
-                    case 0:
-                        allDisappear();
-                        console.log("WiFi");
-                        lib.style.display="block";
-                        rohm.style.display="block";
-                        jm.style.display="block";
-                        mk.style.display="block";
-                        break;
-                    case 1:
-                        allDisappear();
-                        console.log("DokodemoPrint");
-                        lib.style.display="block";
-                        jm.style.display="block";
-                        break;
-                    case 2:
-                        allDisappear();
-                        console.log("DocMachine");
-                        jm.style.display="block";
-                        seishin.style.display="block";
-                        break;
-                    case 3:
-                        allDisappear();
-                        console.log("PrintMachine");
-                        mk.style.display="block";
-                        seishin.style.display="display";
-                        break;
-                    case 4:
-                        allDisappear();
-                        console.log("VendingMachine");
-                        rohm.style.display="block";
-                        lib.style.display="block";
-                        nichiryo.style.display="block";
-                        vend1.style.display="block";
-                        vend2.style.display="block";
-                        break;
-                    case 5:
-                        allDisappear();
-                        console.log("Meal");
-                        nichiryo.style.display="block";
-                        jm.style.display="block";
-                        shion.style.display="block";
-                        break;
-                    case 6:
-                        allDisappear();
-                        console.log("PC");
-                        jm.style.display="block";
-                        kd.style.display="block";
-                        break;
+                if(ratio<=1.7){
+                    switch(i){
+                        case 0:
+                            allDisappear();
+                            console.log("WiFi");
+                            lib.style.display="block";
+                            rohm.style.display="block";
+                            jm.style.display="block";
+                            mk.style.display="block";
+                            break;
+                        case 1:
+                            allDisappear();
+                            console.log("DokodemoPrint");
+                            lib.style.display="block";
+                            jm.style.display="block";
+                            break;
+                        case 2:
+                            allDisappear();
+                            console.log("DocMachine");
+                            jm.style.display="block";
+                            seishin.style.display="block";
+                            break;
+                        case 3:
+                            allDisappear();
+                            console.log("PrintMachine");
+                            mk.style.display="block";
+                            seishin.style.display="display";
+                            break;
+                        case 4:
+                            allDisappear();
+                            console.log("VendingMachine");
+                            rohm.style.display="block";
+                            lib.style.display="block";
+                            nichiryo.style.display="block";
+                            vend1.style.display="block";
+                            vend2.style.display="block";
+                            break;
+                        case 5:
+                            allDisappear();
+                            console.log("Meal");
+                            nichiryo.style.display="block";
+                            jm.style.display="block";
+                            shion.style.display="block";
+                            break;
+                        case 6:
+                            allDisappear();
+                            console.log("PC");
+                            jm.style.display="block";
+                            kd.style.display="block";
+                            break;
+                    }
                 }
+                
             }, false);
         }
     }
@@ -91,56 +95,64 @@ function locateServices(num)
     var vend1 = pins[11];
     var vend2 = pins[12];
     var kd = pins[13];
-    switch(num){
-        case 0:
-            console.log("WiFi");
-            allDisappear();
-            lib.style.display="block";
-            rohm.style.display="block";
-            jm.style.display="block";
-            mk.style.display="block";
-            break;
-        case 1:
-            allDisappear();
-            console.log("DokodemoPrint");
-            lib.style.display="block";
-            jm.style.display="block";
-            break;
-        case 2:
-            allDisappear();
-            console.log("DocMachine");
-            jm.style.display="block";
-            seishin.style.display="block";
-            break;
-        case 3:
-            allDisappear();
-            console.log("PrintMachine");
-            mk.style.display="block";
-            seishin.style.display="block";
-            break;
-        case 4:
-            allDisappear();
-            console.log("VendingMachine");
-            rohm.style.display="block";
-            lib.style.display="block";
-            nichiryo.style.display="block";
-            vend1.style.display="block";
-            vend2.style.display="block";
-            break;
-        case 5:
-            allDisappear();
-            console.log("Meal");
-            nichiryo.style.display="block";
-            rohm.style.display="block";
-            shion.style.display="block";
-            break;
-        case 6:
-            allDisappear();
-            console.log("PC");
-            jm.style.display="block";
-            kd.style.display="block";
-            break;
+
+    if(ratio>=1.7){
+        switch(num){
+            case 0:
+                allDisappear();
+                console.log("WiFi");
+                lib.style.display="block";
+                rohm.style.display="block";
+                jm.style.display="block";
+                mk.style.display="block";
+                kd.style.display="block";
+                break;
+            case 1:
+                allDisappear();
+                console.log("DokodemoPrint");
+                lib.style.display="block";
+                jm.style.display="block";
+                break;
+            case 2:
+                allDisappear();
+                console.log("DocMachine");
+                jm.style.display="block";
+                seishin.style.display="block";
+                break;
+            case 3:
+                allDisappear();
+                console.log("PrintMachine");
+                mk.style.display="block";
+                nichiryo.style.display="block";
+                break;
+            case 4:
+                allDisappear();
+                console.log("VendingMachine");
+                rohm.style.display="block";
+                lib.style.display="block";
+                nichiryo.style.display="block";
+                vend1.style.display="block";
+                vend2.style.display="block";
+                break;
+            case 5:
+                allDisappear();
+                console.log("Meal");
+                nichiryo.style.display="block";
+                rohm.style.display="block";
+                shion.style.display="block";
+                break;
+            case 6:
+                allDisappear();
+                console.log("PC");
+                jm.style.display="block";
+                kd.style.display="block";
+                break;
+            case 7:
+                allDisappear();
+                break;
+        }
     }
+    
 }
 
 //全てのピンを非表示にする関数

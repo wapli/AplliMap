@@ -22,19 +22,8 @@ document.addEventListener('init', function(event){
                 }
             }, false);
         }
+            
         
-        //開いている吹き出しがある場合に、タッチイベントが起これば吹き出しを非表示
-        // console.log("check if any info is open.")
-        // for(var i=0;i<objs.length;i++){
-        //     if(objInfs[i].style.display=="block"){
-        //         document.addEventListener("click", function(){
-        //             closeInf();
-        //         }, false);
-        //     }
-        //     if(i==(objs.length-1)){
-        //         i=0;
-        //     }
-        // }
     }
 },false);
 
@@ -58,12 +47,5 @@ function openInf(num)
     }
     else{
         console.log("not possible to open Information.");
-    }
-}
-
-function closeInf()
-{
-    for(var i=0;i<objInfs.length;i++){
-        objInfs[i].style.display="none";
     }
 }
